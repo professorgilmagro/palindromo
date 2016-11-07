@@ -5,29 +5,29 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.1"
-    timestamp="21394414733722"
+    timestamp="23876406610514"
     token="2207232199826218152"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="226" />
+        duration="2680" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="69" />
+        duration="701" />
     <task
         name="verifier"
-        duration="5" />
+        duration="21" />
 
     <artifact
         location="/home/gilmar/AndroidStudioProjects/Palindromo/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="21394414733722"
+        timestamp="23876406610514"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/gilmar/AndroidStudioProjects/Palindromo/app/build/outputs/apk/app-debug.apk"

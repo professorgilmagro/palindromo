@@ -1,6 +1,5 @@
 package aiec.br.palindromo.dummy;
 
-import android.os.Bundle;
 import android.os.Parcelable;
 
 import java.util.ArrayList;
@@ -8,8 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import aiec.br.palindromo.PalindromoChecker;
-import aiec.br.palindromo.Util;
+import aiec.br.palindromo.Palindromo;
 
 /**
  * Helper class for providing sample content for user interfaces created by
@@ -33,7 +31,7 @@ public class DummyContent {
         Integer index = 0;
         for (Parcelable item: checkers){
             index++;
-            addItem(createDummyItem((PalindromoChecker) item, index.toString()));
+            addItem(createDummyItem((Palindromo) item, index.toString()));
         }
     }
 
@@ -42,11 +40,11 @@ public class DummyContent {
         ITEM_MAP.put(item.id, item);
     }
 
-    private static DummyItem createDummyItem(PalindromoChecker item, String index) {
+    private static DummyItem createDummyItem(Palindromo item, String index) {
         return new DummyItem(index, item.getTexto().toString(), makeDetails(item));
     }
 
-    private static String makeDetails(PalindromoChecker item) {
+    private static String makeDetails(Palindromo item) {
         StringBuilder builder = new StringBuilder();
         builder.append("Detalhes da verificação: ");
         builder.append(String.format("\n%s", item));

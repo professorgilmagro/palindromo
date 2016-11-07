@@ -22,7 +22,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private static final ArrayList<PalindromoChecker> textList = new ArrayList<PalindromoChecker>();
+    private static final ArrayList<Palindromo> textList = new ArrayList<Palindromo>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity
             textCheck = Util.stripAccents(textCheck);
         }
 
-        PalindromoChecker checker = new PalindromoChecker(textCheck);
+        Palindromo checker = new Palindromo(textCheck);
         this.textList.add(checker);
 
         ImageView img = (ImageView) findViewById(R.id.imgResult);
