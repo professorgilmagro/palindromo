@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="aiec.br.palindromo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="25" />
+
+    <application
+        android:name="com.android.tools.fd.runtime.BootstrapApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="aiec.br.palindromo.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="aiec.br.palindromo.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="aiec.br.palindromo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="aiec.br.palindromo.MainActivity" />
+        </activity>
+        <activity
+            android:name="aiec.br.palindromo.ItemDetailActivity"
+            android:label="@string/title_item_detail"
+            android:parentActivityName="aiec.br.palindromo.ItemListActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="aiec.br.palindromo.ItemListActivity" />
+        </activity>
+        <activity
+            android:name="aiec.br.palindromo.HistoryListActivity"
+            android:label="@string/title_history_list"
+            android:parentActivityName="aiec.br.palindromo.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="aiec.br.palindromo.MainActivity" />
+        </activity>
+        <activity
+            android:name="aiec.br.palindromo.HistoryDetailActivity"
+            android:label="@string/title_history_detail"
+            android:parentActivityName="aiec.br.palindromo.HistoryListActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="aiec.br.palindromo.HistoryListActivity" />
+        </activity>
+        <activity
+            android:name="aiec.br.palindromo.DevelopersActivity"
+            android:label="@string/title_activity_developers"
+            android:parentActivityName="aiec.br.palindromo.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="aiec.br.palindromo.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

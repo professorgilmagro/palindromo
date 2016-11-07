@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">Eh Palíndromo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Configurações...</string>
+    <string name="developers">Desenvolvedores</string>
+    <string name="palindromo_description">Um palíndromo é uma palavra, frase ou qualquer outra sequência de unidades que tenha a propriedade de poder ser lida tanto da direita para a esquerda como da esquerda para a direita. Num palíndromo, normalmente são desconsiderados os sinais ortográficos (diacríticos ou de pontuação), assim como os espaços entre as palavras. A palavra \"palíndromo\" vem das palavras gregas palin (\"para trás\") e dromos (\"corrida, pista\") - que corre em sentido inverso.</string>
+    <string name="materia">AIEC - Programação Mobile</string>
+    <string name="integrantes">Gilmar, Ricardo e Rodrigo</string>
+    <string name="developers_label">Developers Team:</string>
+    <string name="enterText">Digite o texto a ser verificado</string>
+    <string name="verificar_agora">Verificar agora</string>
+    <string name="text_required">Preencha o campo antes de continuar</string>
+    <string name="app_image_description">AIEC PM</string>
+    <string name="resposta_certa">Parabéns %s! Essa sequência de texto é um palíndromo.</string>
+    <string name="resposta_incorreta">Sinto muito %s! Essa sequência de texto não é um palíndromo.</string>
+    <string name="title_activity_settings">Configurações</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">Geral</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Exibir nome</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notificações</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silencioso</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="ignore_acentos">Ignorar acentos</string>
+    <string name="ignore_acentos_descricao">Ao habilitar esta opção, o aplicativo vai ignorar acentos do texto. Ex: João = Joao.</string>
+    <string name="exemplo_teste">Este é um exemplo de um teste que fiz no App \'Eh Palindromo\':</string>
+    <string name="compartilhar">Compartilhar com amigo...</string>
+    <string name="aplicativo_nao_instalado">Não existe um aplicativo instalado para essa ação.</string>
+    <string name="voce_sabe">Você sabe o que é um Políndromo?</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_history_list">Histories</string>
+    <string name="title_history_detail">History Detail</string>
+    <string name="nav_history">Histórico de consultas</string>
+    <string name="title_activity_developers">DevelopersActivity</string>
+    <string name="section_format">Nome: %1$s</string>
+    <string name="nav_developers">Desenvolvedores</string>
+    <string name="gilmar">Gilmar Soares</string>
+    <string name="comunicate">Comunicação</string>
+    <string name="tools">Ferramentas</string>
+    <string name="share">Compartilhar</string>
+    <string name="send">Enviar</string>
+    <string name="rodrigo">Rodrigo Fernandes</string>
+    <string name="boreto">Ricardo Boreto</string>
+    <string name="gilmar_profile">Profissional da área de TI. Analista programador na Empresa Folha da Manhã S/A.</string>
+    <string name="boreto_profile">Profissional em Redes de computadores. Amante da Internet das \"Coisas\".</string>
+    <string name="rodrigo_profile">Atua na área da educação com foco em Tecnologia.</string>
+    <string name="equipe_titulo">Developers Team</string>
+    <string name="historico_titulo">Histórico de consultas</string>
+    <string name="silent_mode">Modo silencioso</string>
+    <string name="silent_mode_summary">Desabilita os sons do aplicativo.</string>
+    <string name="ultimo_texto">Último texto consultado</string>
+</resources>

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/gilmar/AndroidStudioProjects/Palindromo/app/build/intermediates/res/merged/debug/raw/mario_snes_game_over.mp3",
+        "source": "/home/gilmar/AndroidStudioProjects/Palindromo/app/src/main/res/raw/mario_snes_game_over.mp3"
+    },
+    {
+        "merged": "/home/gilmar/AndroidStudioProjects/Palindromo/app/build/intermediates/res/merged/debug/raw/game_over.mp3",
+        "source": "/home/gilmar/AndroidStudioProjects/Palindromo/app/src/main/res/raw/game_over.mp3"
+    },
+    {
+        "merged": "/home/gilmar/AndroidStudioProjects/Palindromo/app/build/intermediates/res/merged/debug/raw/applause.mp3",
+        "source": "/home/gilmar/AndroidStudioProjects/Palindromo/app/src/main/res/raw/applause.mp3"
+    },
+    {
+        "merged": "/home/gilmar/AndroidStudioProjects/Palindromo/app/build/intermediates/res/merged/debug/raw/happy_tone.mp3",
+        "source": "/home/gilmar/AndroidStudioProjects/Palindromo/app/src/main/res/raw/happy_tone.mp3"
+    }
+]
