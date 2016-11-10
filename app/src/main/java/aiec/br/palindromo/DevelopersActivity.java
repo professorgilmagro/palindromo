@@ -1,8 +1,6 @@
 package aiec.br.palindromo;
 
 import android.support.design.widget.TabLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -17,8 +15,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -121,16 +117,21 @@ public class DevelopersActivity extends AppCompatActivity {
             int photoId = 0, descId = 0, profileId = 0;
             switch (sectionNumber){
                 case 1:
+                    photoId = R.drawable.anne;
+                    descId = R.string.anne;
+                    profileId = R.string.anne_profile;
+                    break;
+                case 2:
                     photoId = R.drawable.gilmar;
                     descId = R.string.gilmar;
                     profileId = R.string.gilmar_profile;
                     break;
-                case 2:
+                case 3:
                     photoId = R.drawable.boreto;
                     descId = R.string.boreto;
                     profileId = R.string.boreto_profile;
                     break;
-                case 3:
+                case 4:
                     photoId = R.drawable.rr;
                     descId = R.string.rodrigo;
                     profileId = R.string.rodrigo_profile;
@@ -166,17 +167,19 @@ public class DevelopersActivity extends AppCompatActivity {
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 4;
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "Gilmar";
+                    return "Anne";
                 case 1:
-                    return "Ricardo";
+                    return "Gilmar";
                 case 2:
+                    return "Ricardo";
+                case 3:
                     return "Rodrigo";
             }
             return null;

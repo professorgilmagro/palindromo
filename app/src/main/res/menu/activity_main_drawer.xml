@@ -4,7 +4,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_history"
-            android:icon="@android:drawable/presence_away"
+            android:icon="?android:attr/fingerprintAuthDrawable"
             android:title="@string/nav_history" />
         <item
             android:id="@+id/nav_developers"

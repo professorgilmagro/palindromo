@@ -40,7 +40,7 @@ public class HistoryListActivity extends AppCompatActivity {
      * device.
      */
     private boolean mTwoPane;
-    private List<Parcelable> checkerItems;
+    private static List<Parcelable> checkerItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,8 +66,10 @@ public class HistoryListActivity extends AppCompatActivity {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
 
-        Bundle b = getIntent().getExtras();
-        this.checkerItems = b.getParcelableArrayList("historyList");
+        if (getIntent().hasExtra("historyList")) {
+            Bundle b = getIntent().getExtras();
+            this.checkerItems = b.getParcelableArrayList("historyList");;
+        }
 
         View recyclerView = findViewById(R.id.history_list);
         assert recyclerView != null;

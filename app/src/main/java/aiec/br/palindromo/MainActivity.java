@@ -141,11 +141,12 @@ public class MainActivity extends AppCompatActivity
         int imgId = R.drawable.sad;
         int msgId = R.string.resposta_incorreta;
         int soundId = R.raw.mario_snes_game_over;
+        int fabVisibility = View.INVISIBLE;
         if (checker.ehPalindromo()){
             msgId = R.string.resposta_certa;
             imgId = R.drawable.happy;
-            findViewById(R.id.fabShare).setVisibility(View.VISIBLE);
             soundId = R.raw.happy_tone;
+            fabVisibility = View.VISIBLE;
         }
 
         boolean silent = Util.getBooleanPreference(this,"silent_mode");
@@ -157,6 +158,7 @@ public class MainActivity extends AppCompatActivity
 
         img.setImageResource(imgId);
         img.setVisibility(View.VISIBLE);
+        findViewById(R.id.fabShare).setVisibility(fabVisibility);
 
         Util.showMessage(
                 String.format(getString(msgId), username).toString(),
@@ -178,9 +180,12 @@ public class MainActivity extends AppCompatActivity
         intent.putExtra(Intent.EXTRA_TITLE, getString(R.string.voce_sabe));
 
         String message = getString(R.string.palindromo_description);
-        EditText palindromoText = (EditText) findViewById(R.id.txtPhrase);
-        message += String.format("\n%s\n\n", getString(R.string.exemplo_teste));
-        message += String.format("'%s'", palindromoText.getText().toString());
+        if (!textList.isEmpty()){
+            String lastAttemptText = textList.get(textList.size()-1).getTexto();
+            message += String.format("\n%s\n\n", getString(R.string.exemplo_teste));
+            message += String.format("'%s'", lastAttemptText);
+        }
+
         intent.putExtra(Intent.EXTRA_TEXT, message);
 
         try {

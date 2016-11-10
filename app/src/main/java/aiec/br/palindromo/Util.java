@@ -8,8 +8,11 @@ package aiec.br.palindromo;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.media.MediaPlayer;
 import android.preference.PreferenceManager;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.text.Normalizer;

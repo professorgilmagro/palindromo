@@ -97,8 +97,8 @@
     <string name="voce_sabe">Você sabe o que é um Políndromo?</string>
     <string name="title_item_list">Items</string>
     <string name="title_item_detail">Item Detail</string>
-    <string name="title_history_list">Histories</string>
-    <string name="title_history_detail">History Detail</string>
+    <string name="title_history_list">Histórico</string>
+    <string name="title_history_detail">Detalhes</string>
     <string name="nav_history">Histórico de consultas</string>
     <string name="title_activity_developers">DevelopersActivity</string>
     <string name="section_format">Nome: %1$s</string>
@@ -108,10 +108,12 @@
     <string name="tools">Ferramentas</string>
     <string name="share">Compartilhar</string>
     <string name="send">Enviar</string>
+    <string name="anne">Anne Caroline</string>
     <string name="rodrigo">Rodrigo Fernandes</string>
     <string name="boreto">Ricardo Boreto</string>
     <string name="gilmar_profile">Profissional da área de TI. Analista programador na Empresa Folha da Manhã S/A.</string>
     <string name="boreto_profile">Profissional em Redes de computadores. Amante da Internet das \"Coisas\".</string>
+    <string name="anne_profile">Entusiasta na área de Tecnologia, com foco em Gestão de projetos.</string>
     <string name="rodrigo_profile">Atua na área da educação com foco em Tecnologia.</string>
     <string name="equipe_titulo">Developers Team</string>
     <string name="historico_titulo">Histórico de consultas</string>

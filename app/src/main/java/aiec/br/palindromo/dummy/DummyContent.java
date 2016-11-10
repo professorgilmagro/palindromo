@@ -41,12 +41,13 @@ public class DummyContent {
     }
 
     private static DummyItem createDummyItem(Palindromo item, String index) {
-        return new DummyItem(index, item.getTexto().toString(), makeDetails(item));
+        return new DummyItem(index, item.getTexto(), makeDetails(item));
     }
 
     private static String makeDetails(Palindromo item) {
         StringBuilder builder = new StringBuilder();
-        builder.append("Detalhes da verificação: ");
+        builder.append("Detalhes da verificação\n");
+        builder.append("---------------------------------------\n");
         builder.append(String.format("\n%s", item));
 
         return builder.toString();

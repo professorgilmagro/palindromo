@@ -10,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBar;
 import android.view.MenuItem;
 
+import static android.support.v4.app.NavUtils.navigateUpFromSameTask;
+
 /**
  * An activity representing a single History detail screen. This
  * activity is only used narrow width devices. On tablet-size devices,
@@ -24,6 +26,8 @@ public class HistoryDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_history_detail);
         Toolbar toolbar = (Toolbar) findViewById(R.id.detail_toolbar);
         setSupportActionBar(toolbar);
+
+        this.setTitle(getString(R.string.title_history_detail));
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

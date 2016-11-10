@@ -5,27 +5,41 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.1"
-    timestamp="23876406610514"
+    timestamp="12996688367278"
     token="2207232199826218152"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="2680" />
+        duration="71" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="12" />
     <task
         name="instant-run-transform"
-        duration="701" />
+        duration="7" />
     <task
         name="verifier"
-        duration="21" />
+        duration="1" />
 
     <artifact
-        location="/home/gilmar/AndroidStudioProjects/Palindromo/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/home/gilmar/AndroidStudioProjects/Palindromo/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
+    <build
+        timestamp="12545878672199"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/home/gilmar/AndroidStudioProjects/Palindromo/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="12920176044258"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/gilmar/AndroidStudioProjects/Palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
+            type="DEX" />
+    </build>
     <build
         timestamp="23876406610514"
         verifier="FULL_BUILD_REQUESTED" >
