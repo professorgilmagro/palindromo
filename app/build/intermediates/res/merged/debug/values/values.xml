@@ -639,17 +639,20 @@
     <string name="exemplo_teste">Este é um exemplo de um teste que fiz no App \'Eh Palindromo\':</string>
     <string name="gilmar">Gilmar Soares</string>
     <string name="gilmar_profile">Profissional da área de TI. Analista programador na Empresa Folha da Manhã S/A.</string>
+    <string name="github">Ver projeto no GitHub</string>
+    <string name="github_url">https://github.com/professorgilmagro/palindromo</string>
     <string name="historico_titulo">Histórico de consultas</string>
     <string name="ignore_acentos">Ignorar acentos</string>
     <string name="ignore_acentos_descricao">Ao habilitar esta opção, o aplicativo vai ignorar acentos do texto. Ex: João = Joao.</string>
     <string name="integrantes">Gilmar, Ricardo e Rodrigo</string>
     <string name="materia">AIEC - Programação Mobile</string>
+    <string name="nav_cam">Foto perfil</string>
     <string name="nav_developers">Desenvolvedores</string>
     <string name="nav_history">Histórico de consultas</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="palindromo_description">Um palíndromo é uma palavra, frase ou qualquer outra sequência de unidades que tenha a propriedade de poder ser lida tanto da direita para a esquerda como da esquerda para a direita. Num palíndromo, normalmente são desconsiderados os sinais ortográficos (diacríticos ou de pontuação), assim como os espaços entre as palavras. A palavra \"palíndromo\" vem das palavras gregas palin (\"para trás\") e dromos (\"corrida, pista\") - que corre em sentido inverso.</string>
-    <string name="pref_default_display_name">John Smith</string>
+    <string name="pref_default_display_name">amigo(a)</string>
     <string name="pref_description_social_recommendations">Recommendations for people to contact
         based on your message history
     </string>
@@ -665,6 +668,7 @@
     <string name="pref_title_sync_frequency">Sync frequency</string>
     <string name="pref_title_system_sync_settings">System sync settings</string>
     <string name="pref_title_vibrate">Vibrate</string>
+    <string name="profile_img">profile.jpg</string>
     <string name="resposta_certa">Parabéns %s! Essa sequência de texto é um palíndromo.</string>
     <string name="resposta_incorreta">Sinto muito %s! Essa sequência de texto não é um palíndromo.</string>
     <string name="rodrigo">Rodrigo Fernandes</string>

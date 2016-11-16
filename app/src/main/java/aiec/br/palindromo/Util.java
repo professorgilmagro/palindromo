@@ -11,10 +11,12 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.media.MediaPlayer;
+import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import java.io.File;
 import java.text.Normalizer;
 
 /**
@@ -132,5 +134,33 @@ public class Util {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
         return preferences.getString(key, "");
     }
+
+    /**
+     * Retorna o diretório padrão de armazenamento do app
+     *
+     * @return  string
+     */
+    public static String getAppStorageDir(Boolean createIfNotExists){
+        String dir = Util.getAppStorageDir();
+
+        if (createIfNotExists){
+            File profileDir = new File(dir);
+            if (!profileDir.exists()){
+                profileDir.mkdirs();
+            }
+        }
+
+        return dir;
+    }
+
+    /**
+     * Retorna o diretório padrão de armazenamento do app
+     *
+     * @return  string
+     */
+    public static String getAppStorageDir(){
+        return String.format("%s/palindromo/", Environment.getExternalStorageDirectory().getPath());
+    }
+
 }
 

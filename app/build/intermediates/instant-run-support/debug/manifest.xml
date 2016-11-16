@@ -8,13 +8,24 @@
         android:minSdkVersion="23"
         android:targetSdkVersion="25" />
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
     <application
         android:name="com.android.tools.fd.runtime.BootstrapApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:versionName="1.0" >
         <activity
             android:name="aiec.br.palindromo.MainActivity"
             android:label="@string/app_name"
@@ -32,15 +43,6 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="aiec.br.palindromo.MainActivity" />
-        </activity>
-        <activity
-            android:name="aiec.br.palindromo.ItemDetailActivity"
-            android:label="@string/title_item_detail"
-            android:parentActivityName="aiec.br.palindromo.ItemListActivity"
-            android:theme="@style/AppTheme.NoActionBar" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="aiec.br.palindromo.ItemListActivity" />
         </activity>
         <activity
             android:name="aiec.br.palindromo.HistoryListActivity"

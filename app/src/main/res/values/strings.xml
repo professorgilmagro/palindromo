@@ -17,6 +17,8 @@
     <string name="resposta_certa">Parabéns %s! Essa sequência de texto é um palíndromo.</string>
     <string name="resposta_incorreta">Sinto muito %s! Essa sequência de texto não é um palíndromo.</string>
     <string name="title_activity_settings">Configurações</string>
+    <string name="nav_cam">Foto perfil</string>
+    <string name="profile_img">profile.jpg</string>
 
     <!-- Strings related to Settings -->
 
@@ -29,7 +31,7 @@
     </string>
 
     <string name="pref_title_display_name">Exibir nome</string>
-    <string name="pref_default_display_name">John Smith</string>
+    <string name="pref_default_display_name">amigo(a)</string>
 
     <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
     <string-array name="pref_example_list_titles">
@@ -120,4 +122,7 @@
     <string name="silent_mode">Modo silencioso</string>
     <string name="silent_mode_summary">Desabilita os sons do aplicativo.</string>
     <string name="ultimo_texto">Último texto consultado</string>
+    <string name="github">Ver projeto no GitHub</string>
+    <string name="github_url">https://github.com/professorgilmagro/palindromo</string>
+
 </resources>

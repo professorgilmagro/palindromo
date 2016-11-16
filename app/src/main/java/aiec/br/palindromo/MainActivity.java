@@ -1,8 +1,16 @@
 package aiec.br.palindromo;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -15,8 +23,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import java.io.File;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
@@ -47,6 +57,16 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        File background = new File(Util.getAppStorageDir(), getString(R.string.profile_img));
+        if (background.exists()){
+            Drawable profileDrawable = Drawable.createFromPath(background.getAbsolutePath());
+            this.findViewById(android.R.id.content).setBackground(profileDrawable);
+        }
     }
 
     @Override
@@ -103,11 +123,29 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_manage:
                 break;
 
+            case R.id.nav_github:
+                Uri uri = Uri.parse(getString(R.string.github_url));
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+                break;
+
+            case R.id.nav_cam:
+                File outputFile = new File(
+                    Util.getAppStorageDir(true),
+                    getString(R.string.profile_img)
+                );
+
+                Uri profileUri = Uri.fromFile(outputFile);
+                Intent it = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                it.putExtra(MediaStore.EXTRA_OUTPUT, profileUri);
+                it.putExtra("android.intent.extras.CAMERA_FACING", 1);
+                startActivity(it);
+                break;
+
             case R.id.nav_share:
             case R.id.nav_send:
                 this.sharePalindromo(findViewById(android.R.id.content));
                 break;
-
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
