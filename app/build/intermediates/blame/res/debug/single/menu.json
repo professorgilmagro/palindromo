@@ -1,14 +1,14 @@
 [
     {
-        "merged": "/home/gilmar/AndroidStudioProjects/Palindromo/app/build/intermediates/res/merged/debug/menu/main.xml",
-        "source": "/home/gilmar/AndroidStudioProjects/Palindromo/app/src/main/res/menu/main.xml"
+        "merged": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/res/merged/debug/menu/activity_main_drawer.xml",
+        "source": "/home/gilmar/AndroidStudioProjects/palindromo/app/src/main/res/menu/activity_main_drawer.xml"
     },
     {
-        "merged": "/home/gilmar/AndroidStudioProjects/Palindromo/app/build/intermediates/res/merged/debug/menu/menu_developers.xml",
-        "source": "/home/gilmar/AndroidStudioProjects/Palindromo/app/src/main/res/menu/menu_developers.xml"
+        "merged": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/home/gilmar/AndroidStudioProjects/palindromo/app/src/main/res/menu/main.xml"
     },
     {
-        "merged": "/home/gilmar/AndroidStudioProjects/Palindromo/app/build/intermediates/res/merged/debug/menu/activity_main_drawer.xml",
-        "source": "/home/gilmar/AndroidStudioProjects/Palindromo/app/src/main/res/menu/activity_main_drawer.xml"
+        "merged": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/res/merged/debug/menu/menu_developers.xml",
+        "source": "/home/gilmar/AndroidStudioProjects/palindromo/app/src/main/res/menu/menu_developers.xml"
     }
 ]

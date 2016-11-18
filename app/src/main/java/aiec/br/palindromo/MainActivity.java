@@ -1,17 +1,15 @@
 package aiec.br.palindromo;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Color;
-import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -27,12 +25,16 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private static final ArrayList<Palindromo> textList = new ArrayList<Palindromo>();
+    public static final int CHOOSE_GALLERY_IMAGE_CODE = 4562;
+    public static final int TAKE_PHOTO_CODE = 4560;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,16 +59,6 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        File background = new File(Util.getAppStorageDir(), getString(R.string.profile_img));
-        if (background.exists()){
-            Drawable profileDrawable = Drawable.createFromPath(background.getAbsolutePath());
-            this.findViewById(android.R.id.content).setBackground(profileDrawable);
-        }
     }
 
     @Override
@@ -105,41 +97,57 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
         int itemId = item.getItemId();
+        Intent intent = new Intent();
 
         switch (itemId){
             case R.id.nav_history:
-                Intent historyActivity = new Intent(this, HistoryListActivity.class);
-                historyActivity.putExtra("historyList", this.textList);
-                startActivity(historyActivity);
+                intent.setClass(this, HistoryListActivity.class);
+                intent.putExtra("historyList", this.textList);
+                startActivity(intent);
                 break;
 
             case R.id.nav_developers:
-                Intent developersActivity = new Intent(this, DevelopersActivity.class);
-                startActivity(developersActivity);
-                break;
-
-            case R.id.nav_manage:
+                intent.setClass(this, DevelopersActivity.class);
+                startActivity(intent);
                 break;
 
             case R.id.nav_github:
                 Uri uri = Uri.parse(getString(R.string.github_url));
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                intent.setAction(Intent.ACTION_VIEW).setData(uri);
                 startActivity(intent);
                 break;
 
             case R.id.nav_cam:
-                File outputFile = new File(
-                    Util.getAppStorageDir(true),
-                    getString(R.string.profile_img)
-                );
+                    // Verifica se o dispositivo possui uma câmera
+                    PackageManager packageManager = this.getPackageManager();
+                    if(packageManager.hasSystemFeature(PackageManager.FEATURE_CAMERA) == false){
+                        Util.showMessage(getString(R.string.device_does_not_have_camera), this);
+                        break;
+                    }
 
-                Uri profileUri = Uri.fromFile(outputFile);
-                Intent it = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                it.putExtra(MediaStore.EXTRA_OUTPUT, profileUri);
-                it.putExtra("android.intent.extras.CAMERA_FACING", 1);
-                startActivity(it);
+                    Uri photoUri = Util.getAppStorageUriFrom(getString(R.string.custom_background_filename));
+                    File photo = new File(photoUri.getPath());
+                try {
+                    photo.createNewFile();
+                } catch (IOException e) {
+                    Util.showMessage(getString(R.string.text_required), this);
+                }
+
+                intent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
+                    intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(photo));
+                    intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                    startActivityForResult(intent, TAKE_PHOTO_CODE);
+
+                break;
+
+            case R.id.nav_gallery:
+                intent.setType("image/*");
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                startActivityForResult(
+                    Intent.createChooser(intent, getString(R.string.select_image_action)),
+                    CHOOSE_GALLERY_IMAGE_CODE
+                );
                 break;
 
             case R.id.nav_share:
@@ -151,6 +159,40 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    /**
+     * Dispatch incoming result to the correct fragment.
+     *
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode != RESULT_OK) {
+            return;
+        }
+
+        Uri targetUri = null;
+        if (requestCode == CHOOSE_GALLERY_IMAGE_CODE) {
+            targetUri = data.getData();
+        } else if (requestCode == TAKE_PHOTO_CODE) {
+            targetUri = Util.getAppStorageUriFrom(getString(R.string.custom_background_filename));
+            targetUri = Uri.fromFile(new File(targetUri.getPath()));
+        }
+
+        if (targetUri != null) {
+            try {
+                Drawable background = Util.createDrawable(targetUri, this);
+                RelativeLayout layout = (RelativeLayout) findViewById(R.id.content_main);
+                layout.setBackground(background);
+            } catch (FileNotFoundException e) {
+                Util.showMessage(getString(R.string.open_image_err), this);
+            }
+        }
+
     }
 
     /**

@@ -1,7 +1,7 @@
-#Wed Nov 16 20:19:12 BRST 2016
-base.0=/home/gilmar/AndroidStudioProjects/Palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_69f339b78dda8328f13c812108522be5781d54a0
+#Fri Nov 18 15:03:34 BRST 2016
+base.0=/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_acba0a9f9b4190c57113aeceb8602de7d9b59cbb
 renamed.1=classes.dex
 renamed.0=classes2.dex
-file.1=/home/gilmar/AndroidStudioProjects/Palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6b53b985d61dfae5027723a7065b68682024071b/classes.dex
-base.1=/home/gilmar/AndroidStudioProjects/Palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6b53b985d61dfae5027723a7065b68682024071b
-file.0=/home/gilmar/AndroidStudioProjects/Palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_69f339b78dda8328f13c812108522be5781d54a0/classes.dex
+file.1=/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d99b8af78654da2fd530f9c2fdb252bca0cbbe92/classes.dex
+base.1=/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d99b8af78654da2fd530f9c2fdb252bca0cbbe92
+file.0=/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_acba0a9f9b4190c57113aeceb8602de7d9b59cbb/classes.dex

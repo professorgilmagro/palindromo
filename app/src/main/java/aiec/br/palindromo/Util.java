@@ -9,14 +9,22 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Environment;
 import android.preference.PreferenceManager;
+import android.view.Display;
+import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.text.Normalizer;
 
 /**
@@ -159,8 +167,49 @@ public class Util {
      * @return  string
      */
     public static String getAppStorageDir(){
-        return String.format("%s/palindromo/", Environment.getExternalStorageDirectory().getPath());
+        return String.format("%s/palindromo/", Environment.getExternalStorageDirectory().getAbsolutePath());
     }
 
+    /**
+     * Retorna a URI do arquivo com base no diretório padrão da aplicação
+     *
+     * @return  Uri
+     */
+    public static Uri getAppStorageUriFrom(String filename){
+        return Uri.withAppendedPath(Uri.parse(Util.getAppStorageDir()), filename);
+    }
+
+    /**
+     * Dada uma URI de uma imagem, retorna um Drawable
+     *
+     * @param targetUri
+     * @param context
+     *
+     * @return
+     * @throws FileNotFoundException
+     */
+    public static Drawable createDrawable(Uri targetUri, Context context) throws FileNotFoundException {
+        Bitmap bitmap = BitmapFactory.decodeStream(context.getContentResolver().openInputStream(targetUri));
+        Display display = ((WindowManager) context.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
+        Bitmap newBitmap = Bitmap.createScaledBitmap(bitmap, display.getWidth(), display.getHeight(), true);
+
+        return new BitmapDrawable(context.getResources(), newBitmap);
+    }
+
+    /**
+     * Dada uma URI de uma imagem, retorna um Drawable
+     *
+     * @param bitmap
+     * @param context
+     *
+     * @return
+     * @throws FileNotFoundException
+     */
+    public static Drawable createDrawable(Bitmap bitmap, Context context) throws FileNotFoundException {
+        Display display = ((WindowManager) context.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
+        Bitmap newBitmap = Bitmap.createScaledBitmap(bitmap, display.getWidth(), display.getHeight(), true);
+
+        return new BitmapDrawable(context.getResources(), newBitmap);
+    }
 }
 

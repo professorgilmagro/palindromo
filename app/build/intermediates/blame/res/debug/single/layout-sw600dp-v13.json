@@ -1,6 +1,6 @@
 [
     {
-        "merged": "/home/gilmar/AndroidStudioProjects/Palindromo/app/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
-        "source": "/home/gilmar/AndroidStudioProjects/Palindromo/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/layout-sw600dp-v13/design_layout_snackbar.xml"
+        "merged": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
+        "source": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/layout-sw600dp-v13/design_layout_snackbar.xml"
     }
 ]

@@ -8,7 +8,7 @@
     <string name="developers">Desenvolvedores</string>
     <string name="palindromo_description">Um palíndromo é uma palavra, frase ou qualquer outra sequência de unidades que tenha a propriedade de poder ser lida tanto da direita para a esquerda como da esquerda para a direita. Num palíndromo, normalmente são desconsiderados os sinais ortográficos (diacríticos ou de pontuação), assim como os espaços entre as palavras. A palavra \"palíndromo\" vem das palavras gregas palin (\"para trás\") e dromos (\"corrida, pista\") - que corre em sentido inverso.</string>
     <string name="materia">AIEC - Programação Mobile</string>
-    <string name="integrantes">Gilmar, Ricardo e Rodrigo</string>
+    <string name="integrantes">Anne, Gilmar, Ricardo e Rodrigo</string>
     <string name="developers_label">Developers Team:</string>
     <string name="enterText">Digite o texto a ser verificado</string>
     <string name="verificar_agora">Verificar agora</string>
@@ -17,8 +17,12 @@
     <string name="resposta_certa">Parabéns %s! Essa sequência de texto é um palíndromo.</string>
     <string name="resposta_incorreta">Sinto muito %s! Essa sequência de texto não é um palíndromo.</string>
     <string name="title_activity_settings">Configurações</string>
-    <string name="nav_cam">Foto perfil</string>
-    <string name="profile_img">profile.jpg</string>
+    <string name="nav_cam">Da câmera...</string>
+    <string name="custom_background_filename">background.jpg</string>
+    <string name="open_image_err">Não foi possível ler a imagem solicitada.</string>
+    <string name="select_image_action">Selecione uma imagem</string>
+    <string name="device_does_not_have_camera">Este dispositivo não possui uma câmera.</string>
+    <string name="save_photo_err">Erro ao salvar imagem no dispositivo.</string>
 
     <!-- Strings related to Settings -->
 
@@ -124,5 +128,7 @@
     <string name="ultimo_texto">Último texto consultado</string>
     <string name="github">Ver projeto no GitHub</string>
     <string name="github_url">https://github.com/professorgilmagro/palindromo</string>
+    <string name="background_settings">Alterar plano de fundo</string>
+    <string name="menu_gallery_settings">Selecionar da galeria...</string>
 
 </resources>
