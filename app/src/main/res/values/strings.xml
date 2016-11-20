@@ -19,10 +19,12 @@
     <string name="title_activity_settings">Configurações</string>
     <string name="nav_cam">Da câmera...</string>
     <string name="custom_background_filename">background.jpg</string>
+    <string name="wallpaper_filename">wallpaper.jpg</string>
     <string name="open_image_err">Não foi possível ler a imagem solicitada.</string>
-    <string name="select_image_action">Selecione uma imagem</string>
+    <string name="select_image">Selecione a imagem</string>
     <string name="device_does_not_have_camera">Este dispositivo não possui uma câmera.</string>
     <string name="save_photo_err">Erro ao salvar imagem no dispositivo.</string>
+    <string name="sdcard_not_writable">"SDCARD não tem permissão de escrita."</string>
 
     <!-- Strings related to Settings -->
 

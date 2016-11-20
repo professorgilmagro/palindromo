@@ -23,8 +23,12 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.text.Normalizer;
 
 /**
@@ -139,8 +143,20 @@ public class Util {
      * @return  string
      */
     public static String getStringPreference(Context context, String key){
+        return Util.getStringPreference(context, key, "");
+    }
+
+    /**
+     * Retorna o valor de uma configuração de preferência do app
+     *
+     * @param context   contexto
+     * @param key       Chave da preferência
+     *
+     * @return  string
+     */
+    public static String getStringPreference(Context context, String key, String defaultValue){
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
-        return preferences.getString(key, "");
+        return preferences.getString(key, defaultValue);
     }
 
     /**
@@ -210,6 +226,27 @@ public class Util {
         Bitmap newBitmap = Bitmap.createScaledBitmap(bitmap, display.getWidth(), display.getHeight(), true);
 
         return new BitmapDrawable(context.getResources(), newBitmap);
+    }
+
+    public static File createAppFile(String filename) throws IOException {
+        Uri fileUri = Util.getAppStorageUriFrom(filename);
+        File file = new File(fileUri.getPath());
+        file.createNewFile();
+        return file;
+    }
+
+    /**
+     * This copies the actual file from our input to our output stream.
+     * @param in
+     * @param out
+     * @throws IOException
+     */
+    public static void copyFile(InputStream in, FileOutputStream out) throws IOException {
+        byte[] buffer = new byte[1024];
+        int read;
+        while((read = in.read(buffer)) != -1){
+            out.write(buffer, 0, read);
+        }
     }
 }
 

@@ -5,19 +5,19 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.1"
-    timestamp="13832140768981"
+    timestamp="33814333370234"
     token="1690650039066368752"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="225" />
+        duration="210" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="17" />
+        duration="14" />
     <task
         name="verifier"
         duration="0" />
@@ -27,14 +27,21 @@
         type="DEX" />
 
     <build
-        timestamp="13571558811924"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="32434345630630"
+        verifier="BINARY_MANIFEST_FILE_CHANGE" >
         <artifact
             location="/home/gilmar/AndroidStudioProjects/palindromo/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="13832140768981"
+        timestamp="33742198594845"
+        verifier="R_CLASS_CHANGE" >
+        <artifact
+            location="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
+    </build>
+    <build
+        timestamp="33814333370234"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"

@@ -1,15 +1,17 @@
 package aiec.br.palindromo;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
+import android.database.Cursor;
 import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.preference.PreferenceManager;
 import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
-import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -23,10 +25,12 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
-
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.channels.FileChannel;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
@@ -36,6 +40,9 @@ public class MainActivity extends AppCompatActivity
     public static final int CHOOSE_GALLERY_IMAGE_CODE = 4562;
     public static final int TAKE_PHOTO_CODE = 4560;
 
+    /**
+     * Chamado quando a activity é criada pela primeira vez
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +68,28 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
 
+    /**
+     * Invocado quando a activity está prestes a tornar-se visível.
+     */
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        // Aplica a imagem de plano de fundo com base nas preferências pré-definidas pelo usuário
+        String defaultPath = Util.getAppStorageUriFrom(getString(R.string.custom_background_filename)).toString();
+        String backgroundPath = Util.getStringPreference(this, "wallpaper_path", defaultPath);
+        Uri targetUri = Uri.fromFile(new File(Uri.parse(backgroundPath).toString()));
+
+        try {
+            Drawable background = Util.createDrawable(targetUri, this);
+            RelativeLayout layout = (RelativeLayout) findViewById(R.id.content_main);
+            layout.setBackground(background);
+        } catch (FileNotFoundException e) {
+            Util.showMessage(e.getMessage(), this);
+            Util.showMessage(getString(R.string.open_image_err), this);
+        }
+    }
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -78,14 +107,18 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    /**
+     * Responsável por disparar as ações com base na opção selecionada
+     *
+     * @param item  Item selecionado
+     *
+     * @return
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
+        // Ação para a opção de configurações
         if (id == R.id.action_settings) {
             Intent settingsActivity = new Intent(this, SettingsActivity.class);
             startActivity(settingsActivity);
@@ -94,6 +127,13 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
+    /**
+     * Responde ao menu de navegação da aplicação.
+     *
+     * @param item  Item selecionado
+     *
+     * @return
+     */
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -126,28 +166,24 @@ public class MainActivity extends AppCompatActivity
                         break;
                     }
 
-                    Uri photoUri = Util.getAppStorageUriFrom(getString(R.string.custom_background_filename));
-                    File photo = new File(photoUri.getPath());
-                try {
-                    photo.createNewFile();
-                } catch (IOException e) {
-                    Util.showMessage(getString(R.string.text_required), this);
-                }
-
-                intent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
-                    intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(photo));
-                    intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-                    startActivityForResult(intent, TAKE_PHOTO_CODE);
+                    String background = getString(R.string.custom_background_filename);
+                    try {
+                        File file = Util.createAppFile(background);
+                        intent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
+                        intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(file));
+                        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                        startActivityForResult(intent, TAKE_PHOTO_CODE);
+                    } catch (IOException e) {
+                        Util.showMessage(getString(R.string.save_photo_err), this);
+                    }
 
                 break;
 
             case R.id.nav_gallery:
                 intent.setType("image/*");
-                intent.setAction(Intent.ACTION_GET_CONTENT);
-                startActivityForResult(
-                    Intent.createChooser(intent, getString(R.string.select_image_action)),
-                    CHOOSE_GALLERY_IMAGE_CODE
-                );
+                intent.setAction(Intent.ACTION_PICK);
+                Intent chooser = Intent.createChooser(intent, getString(R.string.select_image));
+                startActivityForResult(chooser, CHOOSE_GALLERY_IMAGE_CODE);
                 break;
 
             case R.id.nav_share:
@@ -177,22 +213,74 @@ public class MainActivity extends AppCompatActivity
 
         Uri targetUri = null;
         if (requestCode == CHOOSE_GALLERY_IMAGE_CODE) {
-            targetUri = data.getData();
+            File file = this.createWallpaperFromGallery(data);
+            targetUri = Uri.fromFile(file);
         } else if (requestCode == TAKE_PHOTO_CODE) {
             targetUri = Util.getAppStorageUriFrom(getString(R.string.custom_background_filename));
             targetUri = Uri.fromFile(new File(targetUri.getPath()));
         }
 
         if (targetUri != null) {
-            try {
-                Drawable background = Util.createDrawable(targetUri, this);
-                RelativeLayout layout = (RelativeLayout) findViewById(R.id.content_main);
-                layout.setBackground(background);
-            } catch (FileNotFoundException e) {
-                Util.showMessage(getString(R.string.open_image_err), this);
+            SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+            SharedPreferences.Editor editor = sharedPref.edit();
+            editor.putString("wallpaper_path", targetUri.getPath());
+            editor.commit();
+        }
+    }
+
+    /**
+     * Cria o wallpaper a partir de uma imagem selecionada da galeria
+     * Para este fim, a imagem selecionada é copiada para um local específico do APP
+     *
+     * @param data  Intent utilizada para a seleção da imagem
+     *
+     * @return
+     */
+    private File createWallpaperFromGallery(Intent data) {
+        Uri wallpaperUri = Util.getAppStorageUriFrom(getString(R.string.wallpaper_filename));
+        String selectedImagePath = getRealPathFromURI(data.getData());
+        try {
+            File sd = Environment.getExternalStorageDirectory();
+            if (!sd.canWrite()) {
+                Util.showMessage(getString(R.string.sdcard_not_writable), this);
+                return null;
             }
+
+            File source = new File(selectedImagePath );
+            File destination = new File(wallpaperUri.getPath());
+            if (source.exists()) {
+                FileChannel srcChannel = new FileInputStream(source).getChannel();
+                FileChannel dstChannel = new FileOutputStream(destination).getChannel();
+                dstChannel.transferFrom(srcChannel, 0, srcChannel.size());
+                srcChannel.close();
+                dstChannel.close();
+                return destination;
+            }
+
+        } catch (Exception e) {
+            System.out.println("Error :" + e.getMessage());
         }
 
+        return null;
+    }
+
+    /**
+     * Obtém o caminho real da Uri informada no parâmetro
+     *
+     * @param contentUri    Uri do conteúdo a ser descoberto
+     * @return
+     */
+    public String getRealPathFromURI(Uri contentUri) {
+        String res = null;
+        String[] projection = { MediaStore.Images.Media.DATA };
+        Cursor cursor = getContentResolver().query(contentUri, projection, null, null, null);
+        if (cursor.moveToFirst()) {
+            int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+            res = cursor.getString(column_index);
+        }
+
+        cursor.close();
+        return res;
     }
 
     /**
