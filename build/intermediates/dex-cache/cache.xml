@@ -25,7 +25,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="ead167dcb525d6c382e9946524b6143bce77bad1">
+        sha1="7f4db05b8ad8c3afab217c6e64ad3adcdb77fe08">
         <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_acba0a9f9b4190c57113aeceb8602de7d9b59cbb/classes.dex" />
     </item>
     <item
@@ -241,7 +241,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="a50b33bce8d3585ad9e1da95c465a8c1b13f53a8">
+        sha1="af56f6a3db919b68322e40a6fdb2899c19aa74ea">
         <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d99b8af78654da2fd530f9c2fdb252bca0cbbe92/classes.dex" />
     </item>
     <item

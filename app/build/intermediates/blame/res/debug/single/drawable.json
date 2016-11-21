@@ -148,12 +148,12 @@
         "source": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/drawable/common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
-        "source": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_tile_bg.xml"
-    },
-    {
         "merged": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/res/merged/debug/drawable/ok.png",
         "source": "/home/gilmar/AndroidStudioProjects/palindromo/app/src/main/res/drawable/ok.png"
+    },
+    {
+        "merged": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_tile_bg.xml"
     },
     {
         "merged": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/res/merged/debug/drawable/happy.png",

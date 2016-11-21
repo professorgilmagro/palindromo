@@ -1,5 +1,7 @@
 package aiec.br.palindromo;
 
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -84,7 +86,26 @@ public class HistoryListActivity extends AppCompatActivity {
         }
 
         this.setTitle(getString(R.string.historico_titulo));
+        this.startAnimation();
+    }
 
+    /**
+     * Inicia a animação de visualização desta activity
+     */
+    private void startAnimation() {
+        View view = findViewById(R.id.history_list);
+        ObjectAnimator fadeOut = ObjectAnimator.ofFloat(view, "alpha", 0f);
+        fadeOut.setDuration(1000);
+
+        ObjectAnimator mover = ObjectAnimator.ofFloat(view, "translationX", -500f, 0f);
+        mover.setDuration(1000);
+
+        ObjectAnimator fadeIn = ObjectAnimator.ofFloat(view, "alpha", 0f, 1f);
+        fadeIn.setDuration(2000);
+
+        AnimatorSet animatorSet = new AnimatorSet();
+        animatorSet.play(mover).with(fadeIn).after(fadeOut);
+        animatorSet.start();
     }
 
     @Override

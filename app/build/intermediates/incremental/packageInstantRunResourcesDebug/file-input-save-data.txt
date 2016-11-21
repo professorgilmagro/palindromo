@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Nov 21 18:32:49 BRST 2016
+#Mon Nov 21 19:32:30 BRST 2016
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_ic_star_black_48dp.png
