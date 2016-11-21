@@ -4,6 +4,10 @@
         "source": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_primary_text_material_dark.xml"
     },
     {
+        "merged": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
         "merged": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
         "source": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_primary_text_material_light.xml"
     },
@@ -18,6 +22,10 @@
     {
         "merged": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
         "source": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/color/common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",

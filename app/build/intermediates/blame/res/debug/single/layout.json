@@ -1,23 +1,23 @@
 [
     {
-        "merged": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/res/merged/debug/layout/activity_history_list.xml",
-        "source": "/home/gilmar/AndroidStudioProjects/palindromo/app/src/main/res/layout/activity_history_list.xml"
-    },
-    {
         "merged": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
         "source": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/res/merged/debug/layout/activity_history_list.xml",
+        "source": "/home/gilmar/AndroidStudioProjects/palindromo/app/src/main/res/layout/activity_history_list.xml"
     },
     {
         "merged": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
         "source": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_part_chronometer.xml"
     },
     {
-        "merged": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
-        "source": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_big_media.xml"
-    },
-    {
         "merged": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
         "source": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/layout/design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
+        "source": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_big_media.xml"
     },
     {
         "merged": "/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",

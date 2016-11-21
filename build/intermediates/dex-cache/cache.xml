@@ -3,21 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="de8101343ef7281f06aa141bb46d3886e77565f6">
-        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d99b8af78654da2fd530f9c2fdb252bca0cbbe92/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_e2563f1ac3dd4a4fbeffa9327b3a46e781e094ac/classes.dex" />
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.8.0_5637885e551ecfdbd2d63e8b78e5d088801b49ae/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -30,30 +21,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
-        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.0_27e94702388a940c32de9db4beabb3271bc009f6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="2c0509f31f36fc3ba1d305b6bcf6c365d0807096">
+        sha1="ead167dcb525d6c382e9946524b6143bce77bad1">
         <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_acba0a9f9b4190c57113aeceb8602de7d9b59cbb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
-        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.0_586389b8e8c71c1e88b1d33f588f2bf56f106dde/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -75,12 +48,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
-        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_30f1db9f24492c3250607d5a425f696f12f7e72c/classes.dex" />
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.8.0_7498f8c684bde75a822f394f47200b6b7c2a5170/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -93,42 +66,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
-        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.0_fad6aa8a05101e8e68ddb611361b01f30e5dd381/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
-        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.0_449989dec128fbec441a7880bfc6ad59a2fdf5c7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
-        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_be488dddf4dd80d731a40c94009ab39aab9fbc29/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
-        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.0_8f4032a9d2976717ea03b851b6906b6aad060ffe/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -138,12 +75,30 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.8.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
-        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_9366e2c614a49860e462e433c56884236d279e54/classes.dex" />
+        sha1="ca851be26ff89f5b32cc222cee98139fb3fac830">
+        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.8.0_ebb9e7ad33b0112a8b2d63604178b4844c76a593/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2d240dd085626f03f759c41d628a0c8b63e491f">
+        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.8.0_47cc11c65506c59ce454ad193c49f175334c6004/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.8.0_c771175747b81b9435cab1e90aa1155557abb156/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -165,6 +120,114 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.0_d951f3ad44c82e805340e3b2fb9a69569722dac1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_e2563f1ac3dd4a4fbeffa9327b3a46e781e094ac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_30f1db9f24492c3250607d5a425f696f12f7e72c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9dae58326f6f6a515022468cce56dd04ec3b9fdb">
+        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-9.8.0_8355b75fa00a9a7b7b541933911d9e3c5c68b04a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="85299bf1924dde0200109a58033c5ef84ecb6991">
+        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-9.8.0_56c99e761b2f8cdefffd3a015de73be3fb0465a6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5304fd374e0b4ebf6b42d4037fbfb2c5336511">
+        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-9.8.0_c8e3362efabf71cb006155971e519314c0efb9d9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="363a20f1d25336e827dd24020f2ecdc42d62638f">
+        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-9.8.0_a8f66274d3f9c2ce0441e5089584c8663d0e0378/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.0_27e94702388a940c32de9db4beabb3271bc009f6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.0_586389b8e8c71c1e88b1d33f588f2bf56f106dde/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.0_fad6aa8a05101e8e68ddb611361b01f30e5dd381/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_be488dddf4dd80d731a40c94009ab39aab9fbc29/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.0_8f4032a9d2976717ea03b851b6906b6aad060ffe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -174,12 +237,48 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
+        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
-        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.0_d951f3ad44c82e805340e3b2fb9a69569722dac1/classes.dex" />
+        sha1="a50b33bce8d3585ad9e1da95c465a8c1b13f53a8">
+        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d99b8af78654da2fd530f9c2fdb252bca0cbbe92/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.0_449989dec128fbec441a7880bfc6ad59a2fdf5c7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_9366e2c614a49860e462e433c56884236d279e54/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a1ed98e01bd58976d80c062fd0ea2968a1ff68a1">
+        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.8.0_f508d9544e8332ae860f4c7278b5f509d47b00f2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e9b2cfdfd59b03643f1e240668275378b96615a8">
+        <dex dex="/home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-9.8.0_264191ef45168fd37cb5eb07c87f495dc0676ea0/classes.dex" />
     </item>
 
 </items>

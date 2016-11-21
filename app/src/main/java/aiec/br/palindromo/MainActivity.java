@@ -85,7 +85,6 @@ public class MainActivity extends AppCompatActivity
             RelativeLayout layout = (RelativeLayout) findViewById(R.id.content_main);
             layout.setBackground(background);
         } catch (FileNotFoundException e) {
-            Util.showMessage(e.getMessage(), this);
             Util.showMessage(getString(R.string.open_image_err), this);
         }
     }

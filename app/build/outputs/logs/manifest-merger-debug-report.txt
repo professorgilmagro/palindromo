@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:2:1-67:12
+ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:2:1-66:12
 	package
 		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:3:5-33
 		INJECTED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml
@@ -50,7 +50,7 @@ ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidMan
 	android:name
 		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:11:19-63
 application
-ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:13:5-65:19
+ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:13:5-64:19
 MERGED from [com.android.support:design:25.0.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:25.0.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.0.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:25:5-20
@@ -62,6 +62,15 @@ MERGED from [com.android.support:appcompat-v7:25.0.0] /home/gilmar/AndroidStudio
 MERGED from [com.android.support:support-vector-drawable:25.0.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/AndroidManifest.xml:23:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.0.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:transition:25.0.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.8.0/AndroidManifest.xml:23:5-27:19
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-base:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-clearcut:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/9.8.0/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-gass:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.8.0/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-auth:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.8.0/AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-gcm:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.8.0/AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-iid:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.8.0/AndroidManifest.xml:23:5-19
 	android:label
 		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:16:9-41
 	android:supportsRtl
@@ -75,7 +84,7 @@ MERGED from [com.android.support:transition:25.0.0] /home/gilmar/AndroidStudioPr
 	android:theme
 		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:19:9-40
 activity#aiec.br.palindromo.MainActivity
-ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:20:9-29:20
+ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:20:9-28:20
 	android:label
 		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:22:13-45
 	android:theme
@@ -83,59 +92,59 @@ ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidMan
 	android:name
 		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:21:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:24:13-28:29
+ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:24:13-27:29
 action#android.intent.action.MAIN
 ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:25:17-69
 	android:name
 		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:27:17-77
+ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:27:27-74
+		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:26:27-74
 activity#aiec.br.palindromo.SettingsActivity
-ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:30:9-37:20
+ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:29:9-36:20
 	android:label
-		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:32:13-60
+		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:31:13-60
 	android:parentActivityName
-		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:33:13-55
+		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:32:13-55
 	android:name
-		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:31:13-45
+		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:30:13-45
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:34:13-36:67
+ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:33:13-35:67
 	android:value
-		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:36:17-64
+		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:35:17-64
 	android:name
-		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:35:17-63
+		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:34:17-63
 activity#aiec.br.palindromo.HistoryListActivity
-ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:38:9-46:20
+ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:37:9-45:20
 	android:label
+		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:39:13-55
+	android:parentActivityName
 		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:40:13-55
-	android:parentActivityName
-		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:41:13-55
 	android:theme
-		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:42:13-56
+		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:41:13-56
 	android:name
-		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:39:13-48
+		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:38:13-48
 activity#aiec.br.palindromo.HistoryDetailActivity
-ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:47:9-55:20
+ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:46:9-54:20
 	android:label
-		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:49:13-57
+		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:48:13-57
 	android:parentActivityName
-		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:50:13-62
+		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:49:13-62
 	android:theme
-		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:51:13-56
+		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:50:13-56
 	android:name
-		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:48:13-50
+		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:47:13-50
 activity#aiec.br.palindromo.DevelopersActivity
-ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:56:9-64:20
+ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:55:9-63:20
 	android:label
-		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:58:13-62
+		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:57:13-62
 	android:parentActivityName
-		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:59:13-55
+		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:58:13-55
 	android:theme
-		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:60:13-56
+		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:59:13-56
 	android:name
-		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:57:13-47
+		ADDED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml:56:13-47
 uses-sdk
 INJECTED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.0.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/AndroidManifest.xml:21:5-23:62
@@ -150,6 +159,17 @@ MERGED from [com.android.support:support-vector-drawable:25.0.0] /home/gilmar/An
 MERGED from [com.android.support:animated-vector-drawable:25.0.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:25.0.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.0/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:transition:25.0.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.8.0/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-ads-lite:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.8.0/AndroidManifest.xml:22:5-42
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-base:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-tasks:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-clearcut:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/9.8.0/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-gass:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.8.0/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-auth:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.8.0/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-auth-base:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.8.0/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-gcm:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.8.0/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-iid:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.8.0/AndroidManifest.xml:17:5-42
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.0.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
@@ -158,3 +178,64 @@ MERGED from [com.android.support:transition:25.0.0] /home/gilmar/AndroidStudioPr
 	android:minSdkVersion
 		INJECTED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml
 		INJECTED from /home/gilmar/AndroidStudioProjects/palindromo/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.android.gms:play-services-ads-lite:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.8.0/AndroidManifest.xml:19:5-66
+MERGED from [com.google.android.gms:play-services-gcm:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.8.0/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.8.0/AndroidManifest.xml:21:5-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.8.0/AndroidManifest.xml:19:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-ads-lite:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.8.0/AndroidManifest.xml:20:5-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.8.0/AndroidManifest.xml:20:22-76
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.8.0/AndroidManifest.xml:25:9-232
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.8.0/AndroidManifest.xml:25:72-181
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.8.0/AndroidManifest.xml:25:182-230
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.8.0/AndroidManifest.xml:25:19-71
+activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.8.0/AndroidManifest.xml:26:9-131
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.8.0/AndroidManifest.xml:26:92-129
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.8.0/AndroidManifest.xml:26:19-91
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/AndroidManifest.xml:20:20-65
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/AndroidManifest.xml:19:19-85
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.8.0/AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.8.0/AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.8.0/AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.8.0/AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.8.0/AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.8.0/AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.8.0/AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.8.0/AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.8.0/AndroidManifest.xml:24:18-63
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.android.gms:play-services-gcm:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.8.0/AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.8.0/AndroidManifest.xml:20:5-81
+	android:name
+		ADDED from [com.google.android.gms:play-services-gcm:9.8.0] /home/gilmar/AndroidStudioProjects/palindromo/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.8.0/AndroidManifest.xml:20:22-79
